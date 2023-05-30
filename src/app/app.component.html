@@ -16,14 +16,8 @@
           </div>
         </div>
         <div class="row" style=" background-color: orange;">
-          <div class="col">
-            <app-product-item [productId]="1"></app-product-item> <!--Asi se pasa un parametro a una directiva-->
-          </div>
-          <div class="col">
-            <app-product-item [productId]="2"></app-product-item>
-          </div>
-          <div class="col">
-            <app-product-item [productId]="3"></app-product-item>
+          <div class="col" *ngFor="let product of producItemsId">
+            <app-product-item [productId]="product"></app-product-item> <!--Asi se pasa un parametro a una directiva-->
           </div>
         </div>
       </div>
