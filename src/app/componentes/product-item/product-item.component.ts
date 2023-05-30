@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-product-item',
@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./product-item.component.css']
 })
 export class ProductItemComponent {
+
+   @Input() productId :number = 0; // creo una variable para recogerlo del html (esto serua una directiva)
 
 }
